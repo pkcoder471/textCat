@@ -36,7 +36,7 @@ function App() {
       setmystyle({color:'black'});
       document.body.style.backgroundColor='white';
       showAlert("Light mode is Enabled","Success");
-      document.title="TextUtils-Light mode";
+      document.title="TextCat-Light mode";
     }
     else{
       setmode('dark');
@@ -44,13 +44,13 @@ function App() {
       setmystyle({color:'white'});
       document.body.style.backgroundColor='black';
       showAlert("Dark mode is Enabled","Success");
-      document.title="TextUtils-Dark mode";
+      document.title="TextCat-Dark mode";
     }
   }
   return (
     <>
   <Router>    
-    <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} text={text} mystyle={mystyle}/>
+    <Navbar title="TextCat" mode={mode} toggleMode={toggleMode} text={text} mystyle={mystyle}/>
     <Alert alert={alert}/>
   <div className="container">
       <Routes>
